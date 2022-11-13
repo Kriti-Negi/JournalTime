@@ -1,0 +1,12 @@
+type Entry = 
+ service {
+   getAuthor: () -> (principal) query;
+   getContent: () -> (text) query;
+   getIsPublic: () -> (text) query;
+   getMeToos: () -> (text) query;
+   getPrincipal: () -> (principal) query;
+   getTitle: () -> (text) query;
+   incrementMeeTooCount: () -> () oneway;
+   setIsPublic: (bool) -> (text);
+ };
+service : (text, text, principal) -> Entry

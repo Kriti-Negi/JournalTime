@@ -1,0 +1,6 @@
+service : {
+  addAnonEntry: (principal) -> (text);
+  addEntry: (text, text) -> (text);
+  getAllEntriesAnonymous: (principal) -> (vec principal) query;
+  getAllEntriesOfOwner: (principal) -> (vec principal) query;
+}
